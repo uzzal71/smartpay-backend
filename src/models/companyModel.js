@@ -1,17 +1,18 @@
 import mongoose from "mongoose";
 
-const userSchema = new mongoose.Schema(
+const companySchema = new mongoose.Schema(
     {
-        username: { type: String, required: true },
         full_name: { type: String, required: true },
+        short_name: { type: String, required: true },
         phone: { type: String, required: true },
         email: { type: String, required: true },
-        password: { type: String, required: true },
+        address: { type: String, required: true },
+        logo: { type: String },
         status: { type: String, enum: ['active', 'inactive'] },
         createdAt: { type: Date, required: true }
     }
 );
 
-const user = mongoose.model("User", userSchema);
+const company = mongoose.model("Company", companySchema);
 
-export default user;
+export default company;
