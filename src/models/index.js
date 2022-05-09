@@ -4,6 +4,7 @@ import Department from "./departmentModel";
 import Designation from "./designationModel";
 import Schedule from "./officeScheduleModel";
 import Leave from "./leaveModel";
+import Tax from "./taxModel";
 
 const models = { 
     User,  
@@ -11,7 +12,8 @@ const models = {
     Department,
     Designation,
     Schedule,
-    Leave
+    Leave,
+    Tax
 }
 
 export default models;
